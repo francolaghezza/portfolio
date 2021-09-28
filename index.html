@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porfolio</title>
+    <link href="css/app.css" rel="stylesheet">
+    <link href="css/mystyles.css" rel="stylesheet">
+    <style>
+        @import url('https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/5.3.45/css/materialdesignicons.min.css');
+    </style>
+</head>
+<body>
+   <!-- Navbar -->
+		<nav class="bg-white shadow-lg sticky top-0 z-10">
+			<div class="max-w-6xl mx-auto px-4">
+				<div class="flex justify-between">
+					<!-- Secondary Navbar items -->
+					<div>
+                        <!-- Website Logo -->
+                        <a href="#" class="flex items-center py-4 px-2">
+                            <!--<img src="logo.png" alt="Logo" class="h-8 w-8 mr-2">-->
+                            <span class="font-semibold text-indigo-500 text-lg">Portfolio</span>
+                        </a>
+                    </div>
+                    <div class="flex space-x-7">
+						
+						<!-- Primary Navbar items -->
+						<div class="hidden md:flex items-center space-x-1">
+							<a href="#inicio" class="py-4 px-2 text-indigo-500 border-green-500 font-semibold ">Inicio</a>
+							<a href="#tecnologias" class="py-4 px-2 text-gray-500 font-semibold hover:text-indigo-500 transition duration-300">Tecnologías</a>
+							<a href="#proyectos" class="py-4 px-2 text-gray-500 font-semibold hover:text-indigo-500 transition duration-300">Proyectos</a>
+							
+              <a href="#contacto" class="py-4 px-2 text-gray-500 font-semibold hover:text-indigo-500 transition duration-300">Contacto</a>
+						</div>
+					</div>
+					
+					<!-- Mobile menu button -->
+					<div class="md:hidden flex items-center">
+						<button class="outline-none mobile-menu-button">
+						<svg class=" w-6 h-6 text-gray-500 hover:text-indigo-500 "
+							x-show="!showMenu"
+							fill="none"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"
+							viewBox="0 0 24 24"
+							stroke="currentColor"
+						>
+							<path d="M4 6h16M4 12h16M4 18h16"></path>
+						</svg>
+					</button>
+					</div>
+				</div>
+			</div>
+			<!-- mobile menu -->
+			<div class="hidden mobile-menu">
+				<ul class="">
+					<li class="active"><a href="#inicio" class="block text-sm px-2 py-4 text-white bg-indigo-500 font-semibold">Inicio</a></li>
+					<li><a href="#tecnologias" class="block text-sm px-2 py-4 hover:bg-indigo-500 transition duration-300">Tecnologías</a></li>
+					<li><a href="#proyectos" class="block text-sm px-2 py-4 hover:bg-indigo-500 transition duration-300">Proyectos</a></li>
+					
+          <li><a href="#contacto" class="block text-sm px-2 py-4 hover:bg-indigo-500 transition duration-300">Contacto</a></li>
+				</ul>
+			</div>
+		</nav>
+        <!-- Landing -->
+        <div class="main min-w-screen min-h-screen bg-gray-200 flex items-center justify-center px-5 py-5" id="inicio">
+            <!-- Twitter Card -->
+            <div class="w-full mx-auto rounded-lg bg-white shadow p-5 text-gray-800" style="max-width: 400px">
+                <div class="w-full flex mb-4 items-center">
+                    <div class="overflow-hidden rounded-full w-12 h-12">
+                        <img src="css/img/avatar.jpg" alt="">
+                    </div>
+                    <div class="flex-grow pl-3">
+                        <h6 class="font-bold lg:text-md text-sm">Franco David Laghezza <i class="mdi mdi-check-decagram text-blue-400"></i></h6>
+                        <p class="text-sm text-gray-400">@web.developer</p>
+                    </div>
+                </div>
+                <div class="w-full mb-4">
+                    <p class="text-sm font-semibold">Mi nombre es Franco David Laghezza, técnico superior en Administración de Sistemas Informáticos en Red y actualmente soy desarrollador web full-stack.</p>
+                </div>
+                <div class="w-full text-gray-400 mb-4">
+                    <p class="text-sm text-gray-500">16:15 - 21 sept. 21</p>
+                    
+                </div>
+                <div class="w-full flex flex-row items-center text-gray-400">
+                    <div class="flex flex-row items-center"><i class="mdi mdi-comment-outline"></i><span class="ml-1">1</span></div>
+                    <div class="ml-5 flex-row flex items-center"><i class="mdi mdi-twitter-retweet text-green-500" style="font-size: 22px;"></i><span class="ml-1 text-green-500">5</span></div>
+                    <div class="ml-5 flex flex-row items-center"><i class="mdi mdi-heart text-red-600"></i><span class="ml-1 text-red-600">12</span></div>
+                </div>
+            </div>
+            <!-- /Twitter Card -->
+        </div>
+        <!-- /Landing -->
+        <!-- Tecnologías -->
+        <div class="bg-gradient-to-b to-indigo-900 from-green-900 min-h-screen overflow-auto" id="tecnologias">
+            <div class="container max-w-5xl mx-auto px-4">
+              <!-- Título -->
+              <div class="w-4/5">
+                <h2 class="mt-32 text-white text-6xl font-bold">Tecnologías</h2>
+              </div>
+              <!-- Resumen -->
+              <div class="w-5/6 my-10 ml-6">
+                <h3 class="text-gray-300">
+                  Estas son las tecnologías <br />
+                  <strong class="text-white">con las que he trabajado a nivel profesional</strong>
+                  <br />en el desarrollo de aplicaciones web y APIs REST.
+                </h3>
+              </div>
+              <!-- Lenguajes -->
+              <div class="text-white relative">
+                <h3 class="text-uppercase font-semibold">Lenguajes</h3>
+                <div class="mb-10 grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-1 sm:gap-5 uppercase">
+                
+                  <a href="https://developer.mozilla.org/es/docs/Web/HTML" target="_blank" class="group flex items-center bg-indigo-900 bg-opacity-40 shadow-xl gap-5 px-6 py-5 rounded-lg ring-2 ring-offset-2 ring-offset-blue-800 ring-cyan-700 mt-5 cursor-pointer hover:bg-blue-900 hover:bg-opacity-100 transition">
+                      <i class="mdi mdi-language-html5 text-4xl" style="color: #e34c26;"></i>
+                      <div>
+                        <span>HTML</span>
+                      </div>
+                  </a>
+          
+                  <a href="https://developer.mozilla.org/es/docs/Web/CSS" target="_blank"  class="group flex items-center bg-indigo-900 bg-opacity-40 shadow-xl gap-5 px-6 py-5 rounded-lg ring-2 ring-offset-2 ring-offset-blue-800 ring-cyan-700 mt-5 cursor-pointer hover:bg-blue-900 hover:bg-opacity-100 transition">
+                      <i class="mdi mdi-language-css3 text-4xl" style="color: #264DE4;"></i>
+                      <div>
+                        <span>CSS</span>
+                      </div>
+                      <div>
+                        <i class="fa fa-chevron-right opacity-0 group-hover:opacity-100 transform -translate-x-1 group-hover:translate-x-0 block transition"></i>
+                      </div>
+                  </a>
+            
+                  <a href="https://developer.mozilla.org/es/docs/Web/JavaScript" target="_blank" class="group flex items-center bg-indigo-900 bg-opacity-40 shadow-xl gap-5 px-6 py-5 rounded-lg ring-2 ring-offset-2 ring-offset-blue-800 ring-cyan-700 mt-5 cursor-pointer hover:bg-blue-900 hover:bg-opacity-100 transition">
+                      <i class="mdi mdi-language-javascript text-4xl" style="color: #f7df1e;"></i>
+                      <div>
+                        <span>JavaScript</span>
+                        
+                      </div>
+                      <div>
+                        <i class="fa fa-chevron-right opacity-0 group-hover:opacity-100 transform -translate-x-1 group-hover:translate-x-0 block transition"></i>
+                      </div>
+                  </a>
+            
+                  <a href="https://www.php.net/" target="_blank" class="group flex items-center bg-indigo-900 bg-opacity-40 shadow-xl gap-5 px-6 py-5 rounded-lg ring-2 ring-offset-2 ring-offset-blue-800 ring-cyan-700 mt-5 cursor-pointer hover:bg-blue-900 hover:bg-opacity-100 transition">
+                      <i class="mdi mdi-language-php text-4xl" style="color: #474A8A;"></i>
+                      <div>
+                        <span>PHP</span>
+                      </div>
+                      <div>
+                        <i class="fa fa-chevron-right opacity-0 group-hover:opacity-100 transform -translate-x-1 group-hover:translate-x-0 block transition"></i>
+                      </div>
+                  </a>
+                
+                </div>
+              </div>
+              <!-- Frameworks y librerías -->
+              <div class="text-white relative">
+                <h3 class="text-uppercase font-semibold">Frameworks y librerías</h3>
+                <div class="mb-10 grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-1 sm:gap-5 uppercase">
+                
+                  <a href="https://laravel.com" target="_blank" class="group flex items-center bg-indigo-900 bg-opacity-40 shadow-xl gap-5 px-6 py-5 rounded-lg ring-2 ring-offset-2 ring-offset-blue-800 ring-cyan-700 mt-5 cursor-pointer hover:bg-blue-900 hover:bg-opacity-100 transition">
+                      <i class="mdi mdi-laravel text-red-600 text-4xl"></i>
+                      <div>
+                        <span>Laravel</span>
+                        <span class="text-xs text-blue-300 block">PHP</span>
+                      </div>
+                  </a>
+          
+                  <a href="https://symfony.com/" target="_blank"  class="group flex items-center bg-indigo-900 bg-opacity-40 shadow-xl gap-5 px-6 py-5 rounded-lg ring-2 ring-offset-2 ring-offset-blue-800 ring-cyan-700 mt-5 cursor-pointer hover:bg-blue-900 hover:bg-opacity-100 transition">
+                      <i class="mdi mdi-symfony text-black text-4xl"></i>
+                      <div>
+                        <span>Symfony</span>
+                        <span class="text-xs text-blue-300 block">PHP</span>
+                      </div>
+                      <div>
+                        <i class="fa fa-chevron-right opacity-0 group-hover:opacity-100 transform -translate-x-1 group-hover:translate-x-0 block transition"></i>
+                      </div>
+                  </a>
+            
+                  <a href="https://vuejs.org/" target="_blank" class="group flex items-center bg-indigo-900 bg-opacity-40 shadow-xl gap-5 px-6 py-5 rounded-lg ring-2 ring-offset-2 ring-offset-blue-800 ring-cyan-700 mt-5 cursor-pointer hover:bg-blue-900 hover:bg-opacity-100 transition">
+                      <i class="mdi mdi-vuejs text-green-400 text-4xl"></i>
+                      <div>
+                        <span>Vue</span>
+                        <span class="text-xs text-blue-300 block">JavaScript</span>
+                      </div>
+                      <div>
+                        <i class="fa fa-chevron-right opacity-0 group-hover:opacity-100 transform -translate-x-1 group-hover:translate-x-0 block transition"></i>
+                      </div>
+                  </a>
+            
+                  <a href="https://jquery.com/" target="_blank" class="group flex items-center bg-indigo-900 bg-opacity-40 shadow-xl gap-5 px-6 py-5 rounded-lg ring-2 ring-offset-2 ring-offset-blue-800 ring-cyan-700 mt-5 cursor-pointer hover:bg-blue-900 hover:bg-opacity-100 transition">
+                      <i class="mdi mdi-jquery text-blue-400 text-4xl"></i>
+                      <div>
+                        <span>JQuery</span>
+                        <span class="text-xs text-blue-300 block">Javascript</span>
+                      </div>
+                      <div>
+                        <i class="fa fa-chevron-right opacity-0 group-hover:opacity-100 transform -translate-x-1 group-hover:translate-x-0 block transition"></i>
+                      </div>
+                  </a>
+
+                  <a href="https://getbootstrap.com/" target="_blank" class="group flex items-center bg-indigo-900 bg-opacity-40 shadow-xl gap-5 px-6 py-5 rounded-lg ring-2 ring-offset-2 ring-offset-blue-800 ring-cyan-700 mt-5 cursor-pointer hover:bg-blue-900 hover:bg-opacity-100 transition">
+                      <i class="mdi mdi-bootstrap text-indigo-500 text-4xl"></i>
+                      <div>
+                        <span>Bootstrap</span>
+                        <span class="text-xs text-blue-300 block">CSS</span>
+                      </div>
+                      <div>
+                        <i class="fa fa-chevron-right opacity-0 group-hover:opacity-100 transform -translate-x-1 group-hover:translate-x-0 block transition"></i>
+                      </div>
+                  </a>
+
+                  <a href="https://tailwindcss.com/" target="_blank" class="group flex items-center bg-indigo-900 bg-opacity-40 shadow-xl gap-5 px-6 py-5 rounded-lg ring-2 ring-offset-2 ring-offset-blue-800 ring-cyan-700 mt-5 cursor-pointer hover:bg-blue-900 hover:bg-opacity-100 transition">
+                      <img src="css/img/tailwindcss-icon.svg" class="w-9">
+                      <div>
+                        <span>Tailwind CSS</span>
+                        <span class="text-xs text-blue-300 block">CSS</span>
+                      </div>
+                      <div>
+                        <i class="fa fa-chevron-right opacity-0 group-hover:opacity-100 transform -translate-x-1 group-hover:translate-x-0 block transition"></i>
+                      </div>
+                  </a>
+
+                </div>
+                <!-- Bases de datos -->
+                <div class="text-white relative">
+                    <h3 class="text-uppercase font-semibold">Bases de datos</h3>
+                    <div class="mb-10 grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-1 sm:gap-5 uppercase">
+                    
+                      <a href="https://www.mysql.com/" target="_blank" class="group flex items-center bg-indigo-900 bg-opacity-40 shadow-xl gap-5 px-6 py-5 rounded-lg ring-2 ring-offset-2 ring-offset-blue-800 ring-cyan-700 mt-5 cursor-pointer hover:bg-blue-900 hover:bg-opacity-100 transition">
+                          <img src="css/img/mysql-official.svg" class="w-9">
+                          <div>
+                            <span>MySQL</span>
+                          </div>
+                      </a>
+              
+                      <a href="https://www.oracle.com/es/index.html" target="_blank"  class="group flex items-center bg-indigo-900 bg-opacity-40 shadow-xl gap-5 px-6 py-5 rounded-lg ring-2 ring-offset-2 ring-offset-blue-800 ring-cyan-700 mt-5 cursor-pointer hover:bg-blue-900 hover:bg-opacity-100 transition">
+                          <img src="css/img/oracle-icon.svg" class="w-9">
+                          <div>
+                            <span>Oracle</span>
+                          </div>
+                         
+                      </a>
+
+                    </div>
+                </div>
+                <!-- Otros -->
+                <div class="text-white relative">
+                    <h3 class="text-uppercase font-semibold">Otros</h3>
+                    <div class="mb-10 grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-1 sm:gap-5 uppercase">
+                    
+                      <a href="https://git-scm.com/" target="_blank" class="group flex items-center bg-indigo-900 bg-opacity-40 shadow-xl gap-5 px-6 py-5 rounded-lg ring-2 ring-offset-2 ring-offset-blue-800 ring-cyan-700 mt-5 cursor-pointer hover:bg-blue-900 hover:bg-opacity-100 transition">
+                          <i class="mdi mdi-git text-4xl" style="color: #f34f29;"></i>
+                          <div>
+                            <span>Git</span>
+                          </div>    
+                      </a>
+                      <a href="https://www.npmjs.com/" target="_blank" class="group flex items-center bg-indigo-900 bg-opacity-40 shadow-xl gap-5 px-6 py-5 rounded-lg ring-2 ring-offset-2 ring-offset-blue-800 ring-cyan-700 mt-5 cursor-pointer hover:bg-blue-900 hover:bg-opacity-100 transition">
+                        <i class="mdi mdi-npm text-4xl text-red-500"></i>
+                        
+                        <div>
+                          <span>npm</span>
+                        </div>    
+                      </a>
+
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <!-- /Tecnologías -->
+        <!-- Proyectos -->
+        <div class="bg-gradient-to-b to-green-900 from-indigo-900  min-h-screen overflow-auto" id="proyectos">
+          <div class="container max-w-5xl mx-auto px-4">
+            <!-- Título -->
+            <div class="w-4/5">
+              <h2 class="mt-32 text-white text-6xl font-bold">Proyectos</h2>
+            </div>
+            <!-- Resumen -->
+            <div class="w-5/6 my-10 ml-6">
+              <h3 class="text-gray-300">
+                Algunos de mis proyectos utilizando<br>
+                <strong class="text-white">HTML, CSS, JavaScript, Bootstrap, Symfony, etc.</strong>
+              </h3>
+            </div>
+           
+            <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-4 mb-12">
+              <article>
+                 
+                  <section class="mt-6 grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-x-6 gap-y-8">
+                    <div class=" shadow-2xl">
+                      <div>
+                          <img src="css/img/harrison-broadbent-c3YpscwJb04-unsplash.jpg" class="w-full h-72 object-cover">
+                      </div>
+                      <div class="px-4 py-4  bg-white">
+                          <h2 class="font-bold text-2xl text-gray-800">Rasprivate Cloud</h2>
+                              <p class="sm:text-sm text-xs text-gray-700 px-2 my-3">
+                                Rasprivate Cloud es un servicio de almacenamiento en la nube desarrollado con Symfony 5 utilizando el stack LAMP utilizando como servidor físico una Raspberry Pi 3 con Apache como servidor web y MySQL como gestor de bases de datos. Consume el servicio de Virus Total a través de su <a href="https://developers.virustotal.com/reference" target="_blank" class="underline">API</a> antes de subir un archivo al servidor. 
+                              </p>
+                          <div class="user flex items-center -ml-3 mt-8 mb-4 px-2 w-full">
+                            <i class="mdi mdi-symfony text-black text-4xl mr-1"></i>
+                            <i class="mdi mdi-language-php text-4xl mx-1" style="color: #474A8A;"></i>
+                            <i class="mdi mdi-jquery text-blue-400 text-4xl mx-1"></i>
+                            <i class="mdi mdi-language-javascript text-4xl mx-1" style="color: #f7df1e;"></i>
+                            <i class="mdi mdi-bootstrap text-indigo-500 text-4xl ml-1"></i>
+                            <a href="https://github.com/francolaghezza/rasprivate-cloud" target="_blank" class="ml-auto block underline">Ver más</a>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="bg-white relative shadow-2xl" >
+                      <div class="">
+                          <img src="css/img/kelly-sikkema-gcHFXsdcmJE-unsplash.jpg" class="w-full h-72 object-cover">
+                      </div>
+                      <div class="px-4 py-2 mt-2 bg-white">
+                          <h2 class="font-bold text-2xl text-gray-800 ">Drawing APP JS</h2>
+                              <p class="sm:text-sm text-xs text-gray-700 px-2 mr-1 my-3">
+                                Aplicación de dibujo con Canvas (HTML5), JavaScript, jQuery y Bootstrap.
+                              </p> 
+                      </div>
+                      <div class="lg:absolute bottom-0 left-0 w-full">
+                        <div class="flex flex-row items-center justify-end mb-8 px-2 w-full">
+                          <i class="mdi mdi-language-html5 text-4xl" style="color: #e34c26;"></i>
+                          <i class="mdi mdi-jquery text-blue-400 text-4xl mx-1"></i>
+                          <i class="mdi mdi-language-javascript text-4xl mx-1" style="color: #f7df1e;"></i>
+                          <i class="mdi mdi-bootstrap text-indigo-500 text-4xl ml-1"></i>
+                          <a href="https://francolaghezza.github.io/DrawingAppJS/" target="_blank" class="ml-auto block underline mr-6">Ver más</a>
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </section>
+              </article>
+          </section>
+          </div>
+      </div>
+      <!-- /Proyectos -->
+      <!-- Contacto -->
+      <div class="bg-gradient-to-b to-indigo-900 from-green-900 min-h-screen overflow-auto" id="contacto">
+        <div class="container max-w-5xl mx-auto px-4">
+          <!-- Título -->
+          <div class="w-4/5">
+            <h2 class="mt-32 text-white text-6xl font-bold">Contacto</h2>
+          </div>
+          <!-- Resumen -->
+          <div class="w-5/6 my-10 ml-6">
+            <h3 class="text-gray-300">
+              Puedes contactar conmigo a través de:
+            </h3>
+          </div>
+
+          <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-4">
+            <div class="flex flex-row items-center justify-center mb-8 p-2 w-full bg-white rounded-lg">
+              <a href="https://www.linkedin.com/in/franco-david-laghezza/" target="_blank"><i class="mdi mdi-linkedin text-6xl text-blue-800 ml-4"></i></a>
+              <a href="mailto:davidlaghezza@gmail.com"><i class="mdi mdi-gmail text-red-600 text-6xl mx-4"></i></a>
+              <a href="https://github.com/francolaghezza" target="_blank"><i class="mdi mdi-github text-6xl text-black"></i></a>
+              
+            </div>
+          </section>
+        </div>
+    </div>
+    <!-- /Proyectos -->
+		<script src="js/app.js" defer></script>
+</body>
+</html>
